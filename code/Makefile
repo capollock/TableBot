@@ -6,19 +6,20 @@
 
 MCU   = atmega328p
 F_CPU = 1000000
-BAUD = 9600
+BAUD = 9600 
+
 ## Also try BAUD = 19200 or 38400 if you're feeling lucky.
 
 ## This is where your main() routine lives 
-MAIN = pov.c
+MAIN = phaseOne_v7.c 
 
 ## If you've split your program into multiple .c / .h files, 
 ## include the additional source (in same directory) here 
 LOCAL_SOURCE = 
 
 ## Here you can link to one more directory (and multiple .c files)
-EXTRA_SOURCE_DIR = 
-EXTRA_SOURCE_FILES = 
+EXTRA_SOURCE_DIR = ../../util/
+EXTRA_SOURCE_FILES = cServo.c USART.c cSonic.c cInfra.c cMotor.c
 
 ##########------------------------------------------------------##########
 ##########                 Programmer Defaults                  ##########
@@ -26,9 +27,9 @@ EXTRA_SOURCE_FILES =
 ##########        (Can override.  See bottom of file.)          ##########
 ##########------------------------------------------------------##########
 
-PROGRAMMER_TYPE = arduino
+PROGRAMMER_TYPE = usbtiny
 # extra arguments to avrdude: baud rate, chip type, -F flag, etc.
-PROGRAMMER_ARGS = -P com3
+PROGRAMMER_ARGS = 
 
 ##########------------------------------------------------------##########
 ##########                   Makefile Magic!                    ##########
