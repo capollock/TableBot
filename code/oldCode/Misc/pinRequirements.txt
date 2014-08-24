@@ -1,0 +1,21 @@
+--------------------------------------------------------------------
+Pin Requirements for Tred Lte.
+--------------------------------------------------------------------
+
+-->Servo Pins for Timer1
+	
+	PB1 / OC1A needs to be dedicated to servo logic pin
+
+-->Timer0 PWM for Motor 1 and Motor 2
+
+	Motor 1: PD6 / OC0A
+	Motor 2: PD5 / OC0B
+
+-->ultraSonic Sensor for Timer2
+
+	Sensor 1: PB3 / OC2A
+	Sensor 2: PD3 / OC2B
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+

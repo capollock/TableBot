@@ -1,0 +1,24 @@
+//------------------------------------------------------------------
+// AVR Cheat Sheet
+//------------------------------------------------------------------
+
+//Bit Manipulation
+
+-Set a bit
+	*This code turns on a bit on no matter its orientation
+	*i is the "decimal place" of the bit in the byte
+	*Set the ith bit in the byte
+	
+	BYTE |= (1 << i)
+
+-Clear a bit
+	*This code turns off a bit (i.e., changes the value to 0)
+	*Turn off the ith bit in the byte
+	
+	BYTE &= ~(1 << i)
+	
+-Toggle a bit
+	*This code toggles the bit in the byte
+	*If the the ith bit in the byte is on turn it off, vice versa
+	
+	BYTE ^= (1 << i)

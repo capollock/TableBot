@@ -1,0 +1,12 @@
+
+
+avrdude: error: usbtiny_transmit: error sending control message: Operation not permitted
+avrdude: initialization failed, rc=-1
+         Double check connections and try again, or use -F to override
+         this check.
+
+
+avrdude: error: usbtiny_transmit: error sending control message: Operation not permitted
+
+avrdude done.  Thank you.
+
